@@ -1,0 +1,32 @@
+class Stationeri:
+    def __init__(self, title):
+        self.title = title
+
+    def draw(self):
+        return 'Запуск отрисовки'
+
+
+class Pen(Stationeri):
+
+    def draw(self):
+        return f'Отрисовка {self.title}'
+
+
+class Pensil(Stationeri):
+
+    def draw(self):
+        return f'Запуск отрисовки {self.title}'
+
+
+class Handle(Stationeri):
+
+    def draw(self):
+        return f'Отрисовать {self.title}'
+
+
+a = Pen('ручка')
+print(a.draw())
+b = Pensil('карандаш')
+print(b.draw())
+c = Handle('маркер')
+print(c.draw())
