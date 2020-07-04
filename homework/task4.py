@@ -19,8 +19,6 @@ class Car:
 
 
 class TownCar(Car):
-    def __init__(self, speed, color, name, is_police):
-        super().__init__(speed, color, name, is_police)
 
     def show_speed(self):
         print(f'{self.name} движется со скоростью {self.speed}')
@@ -29,13 +27,11 @@ class TownCar(Car):
 
 
 class Sport_car(Car):
-    def __init__(self, speed, color, name, is_police):
-        super().__init__(speed, color, name, is_police)
+    pass
 
 
 class Work_car(Car):
-    def __init__(self, speed, color, name, is_police):
-        super().__init__(speed, color, name, is_police)
+
 
     def show_speed(self):
         print(f'{self.name} движется со скоростью {self.speed}')
@@ -43,10 +39,8 @@ class Work_car(Car):
             return f'У {self.name} Привышение скорости'
 
 
-
 class Police_car(Car):
-    def __init__(self, speed, color, name, is_police):
-        super().__init__(speed, color, name, is_police)
+    pass
 
 
 
