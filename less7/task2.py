@@ -63,6 +63,7 @@ coat1 = Coat(54)
 coat2 = Coat(64)
 print(coat2)
 collection1 = ClothesCollection
+print(ClothesCollection.total_fabric_area())
 
 
 
